@@ -244,6 +244,11 @@ header {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.recipe-image:hover {
+    transform: scale(1.05);
 }
 
 .recipe-content h3 {
