@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -7,17 +6,19 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #333;
     background-color: #fefefe;
 }
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
+    text-wrap: pretty;
 }
+
 
 
 .navbar {
@@ -36,9 +37,10 @@ body {
     align-items: center;
 }
 
+
 .nav-brand .brand-link {
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-style: italic;
     color: #8b4513;
     text-decoration: none;
@@ -54,15 +56,18 @@ body {
     color: #333;
     text-decoration: none;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: color 0.3s ease;
-    text-transform: lowercase;
+    
 }
 
 .nav-link:hover {
     color: #8b4513;
 }
 
+.nav-link.active {
+    color:#d4691a;
+}
 
 header {
     background: linear-gradient(135deg, #f8f6f4 0%, #f0ede8 100%);
@@ -74,20 +79,22 @@ header {
 
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
     font-style: italic;
     color: #8b4513;
     margin-bottom: 10px;
     font-weight: 400;
     text-align: left;
+    line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
     color: #666;
     margin-bottom: 60px;
     font-weight: 300;
     text-align: left;
+    line-height: 1.3;
 }
 
 .hero-content {
@@ -95,8 +102,8 @@ header {
 }
 
 .hero-description {
-    font-size: clamp(0.95rem, 1.5vw, 1rem);
-    line-height: 1.8;
+    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
+    line-height: 1.5;
     color: #555;
     margin-bottom: 30px;
     text-align: left;
@@ -105,15 +112,16 @@ header {
 .hero-quote {
     font-style: italic;
     color: #8b4513;
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
     margin-bottom: 30px;
     text-align: left;
+    line-height: 1.4;
 }
 
 .hero-final {
-    font-size: clamp(0.95rem, 1.5vw, 1rem);
+    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
     color: #555;
-    line-height: 1.8;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -138,25 +146,27 @@ header {
 
         .fairy-tale-hero-title {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
             font-style: italic;
             color: #8b4513;
             margin-bottom: 10px;
             font-weight: 400;
             text-align: left;
+            line-height: 1.2;
         }
 
         .fairy-tale-hero-subtitle {
-            font-size: clamp(1rem, 2vw, 1.1rem);
+            font-size: clamp(0.95rem, 2vw, 1.05rem);
             color: #666;
             margin-bottom: 60px;
             font-weight: 300;
             text-align: left;
+            line-height: 1.3;
         }
 
         .fairy-tale-hero-description {
-            font-size: clamp(0.95rem, 1.5vw, 1rem);
-            line-height: 1.8;
+            font-size: clamp(0.9rem, 1.5vw, 0.95rem);
+            line-height: 1.5;
             color: #555;
             margin-bottom: 30px;
             text-align: left;
@@ -165,15 +175,16 @@ header {
         .fairy-tale-hero-quote {
             font-style: italic;
             color: #8b4513;
-            font-size: clamp(1rem, 2vw, 1.1rem);
+            font-size: clamp(0.95rem, 2vw, 1.05rem);
             margin-bottom: 30px;
             text-align: left;
+            line-height: 1.4;
         }
 
         .fairy-tale-hero-final {
-            font-size: clamp(0.95rem, 1.5vw, 1rem);
+            font-size: clamp(0.9rem, 1.5vw, 0.95rem);
             color: #555;
-            line-height: 1.8;
+            line-height: 1.5;
             text-align: left;
         }
 
@@ -202,11 +213,13 @@ header {
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
     color: #8b4513;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-style: italic;
+    line-height: 1.2;
+    padding: 50px;
 }
 
 .recipe-grid {
@@ -253,16 +266,17 @@ header {
 
 .recipe-content h3 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    font-size: clamp(1.4rem, 3vw, 1.7rem);
     color: #8b4513;
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .recipe-content p {
     color: #666;
-    line-height: 1.7;
+    line-height: 1.4;
     margin-bottom: 20px;
-    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
+    font-size: clamp(0.85rem, 1.5vw, 0.9rem);
     text-align: left;
 }
 
@@ -272,8 +286,7 @@ header {
     padding: 12px 30px;
     border: none;
     border-radius: 25px;
-    cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -293,12 +306,13 @@ header {
 
 .more-recipes-link {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-size: clamp(1.05rem, 2.5vw, 1.25rem);
     color: #8b4513;
     text-decoration: none;
     font-style: italic;
     transition: all 0.3s ease;
     display: inline-block;
+    line-height: 1.3;
 }
 
 .more-recipes-link:hover {
@@ -308,8 +322,9 @@ header {
 
 
 .introduction-section {
-    background-color: #ffffff;
     padding: 80px 0;
+    margin: auto;
+    max-width: 600px;
 }
 
 .introduction-section .container {
@@ -346,15 +361,16 @@ header {
 
 .title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
     color: #8b4513;
     margin-bottom: 20px;
     font-style: italic;
+    line-height: 1.2;
 }
 
 .description {
-    font-size: clamp(1rem, 1.8vw, 1.1rem);
-    line-height: 1.8;
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    line-height: 1.5;
     color: #555;
     margin-bottom: 40px;
 }
@@ -363,7 +379,7 @@ header {
 .info-icons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 30px;
+
 }
 
 .info-item {
@@ -385,27 +401,19 @@ header {
 }
 
 .label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #777;
     margin-bottom: 2px;
+    line-height: 1.3;
 }
 
 .value {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: bold;
     color: #333;
+    line-height: 1.2;
 }
 
-
-.container2 {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: center;
-    gap: 2rem;
-    padding: 0 20px;
-}
 
 .image-box img {
     width: 100%;
@@ -417,13 +425,14 @@ header {
 .content-box h2 {
     font-family: 'Playfair Display', serif;
     color: #8b3f24;
-    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    font-size: clamp(1.4rem, 3vw, 1.7rem);
     margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .content-box p {
-    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
-    line-height: 1.6;
+    font-size: clamp(0.85rem, 1.5vw, 0.9rem);
+    line-height: 1.4;
     max-width: 500px;
 }
 
@@ -437,16 +446,18 @@ header {
 
 .ingredients-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    max-width: 800px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    column-gap: 80px; 
+    row-gap: 20px;     
+    max-width: 900px;
     margin: 0 auto;
 }
+
 
 .ingredient-row {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -457,11 +468,13 @@ header {
 .ingredient-name {
     font-weight: 500;
     color: #d4691a;
+    font-size: 0.9rem;
 }
 
 .ingredient-amount {
     color: #666;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 
@@ -491,15 +504,18 @@ header {
 }
 
 .prep-text h2 {
-    font-size: clamp(1.8rem, 4vw, 2rem);
+    font-size: clamp(1.7rem, 4vw, 1.9rem);
     font-weight: bold;
     margin-bottom: 30px;
     color: #2c2c2c;
+    line-height: 1.2;
 }
 
 .steps-list {
     list-style: none;
     counter-reset: step-counter;
+    margin: auto;
+    max-width: 600px;
 }
 
 .steps-list li {
@@ -507,8 +523,8 @@ header {
     position: relative;
     padding: 20px 0 20px 60px;
     border-bottom: 1px solid #e8e8e8;
-    font-size: clamp(1rem, 1.8vw, 1.1rem);
-    line-height: 1.7;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    line-height: 1.3;
 }
 
 .steps-list li:last-child {
@@ -548,17 +564,18 @@ header {
 }
 
 .serving-text p {
-    margin-bottom: 18px;
-    font-size: clamp(1rem, 1.8vw, 1.1rem);
-    line-height: 1.8;
+    margin-bottom: 10px;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    line-height: 1.3;
     text-align: left;
     color: #3a2a1a;
+    text-wrap: pretty;
 }
 
 .serving-text p:first-child {
     font-weight: 600;
     color: #d4691a;
-    font-size: clamp(1.1rem, 2vw, 1.2rem);
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
 }
 
 .serving-text p:last-child {
@@ -568,6 +585,10 @@ header {
     border-left: 4px solid #d4691a;
     padding-left: 15px;
     margin-top: 25px;
+}
+
+.textunder {
+    max-width: 600px;
 }
 
 
@@ -587,10 +608,9 @@ footer {
 .footer-link {
     color: #333;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 400;
     transition: color 0.3s ease;
-    text-transform: lowercase;
 }
 
 .footer-link:hover {
@@ -613,6 +633,8 @@ footer {
         gap: 20px;
     }
 }
+
+
 
 @media (max-width: 768px) {
     .navbar .container {
@@ -669,6 +691,8 @@ footer {
     
     .ingredients-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+        
     }
     
     .serving-content {
@@ -684,7 +708,7 @@ footer {
     
     .steps-list li {
         padding: 20px 0 20px 50px;
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     
     .steps-list li::before {
@@ -725,7 +749,7 @@ footer {
     }
     
     .nav-brand .brand-link {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .nav-menu {
@@ -733,7 +757,7 @@ footer {
     }
     
     .nav-link {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     header {
@@ -751,7 +775,7 @@ footer {
     
     .recipe-btn {
         padding: 10px 25px;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     
     .ingredients {
@@ -789,19 +813,19 @@ footer {
 
 @media (max-width: 320px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .recipe-content h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .steps-list li {
